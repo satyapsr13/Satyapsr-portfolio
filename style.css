@@ -1,0 +1,121 @@
+.body {
+  padding: 0;
+  margin: 0;
+}
+.nav {
+  display: flex;
+  border: 2px solid rgb(228, 8, 8);
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.nav-list li {
+  font-size: 1.5rem;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: rgb(228, 8, 8);
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 10px;
+}
+.nav-list li a:hover {
+  color: white;
+  background-color: rgb(228, 8, 8);
+  border-radius: 5px;
+}
+.round-image {
+  width: 250px;
+  height: 250px;
+  /* background-image: url('https://d3iw72m71ie81c.cloudfront.net/female-20.jpeg'); */
+  background-size: contain;
+  clip-path: circle(50% at 50% 50%);
+  display: block;
+}
+.image-and-about-section {
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  padding: 50px 50px;
+}
+@media screen and (max-width: 768px) {
+  .image-and-about-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.about-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .about-section {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.social-media-icons {
+  width: 80%;
+}
+/* social icons */
+.fa {
+  /* border-radius: 100px; */
+  padding: 20px;
+  text-align: center;
+  margin: 5px 2px;
+  font-size: 30px;
+  width: 1.5rem;
+  text-decoration: none;
+}
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+.fa:hover {
+  opacity: 0.9;
+}
+.project-card {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  /* align-items: center; */
+  padding: 20px 20px;
+  border: 1px solid red;
+}
+.project-image img {
+  width: 50%;
+  height: 80%;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
